@@ -25,7 +25,6 @@ header{
 
 .heading a{
   color: #fff;
-  /* ヘッダ領域で"color: #fff;"と設定するも、反映されずこちらにも記載 */
 }
 
 .nav{
@@ -36,7 +35,6 @@ header{
   padding: 0 20px;
   display: inline-block;
   color: #fff;
-  /* ヘッダ領域で"color: #fff;"と設定するも、反映されずこちらにも記載 */
 }
 
 /* main */
@@ -71,8 +69,7 @@ main{
   border-radius: 10px;
   width: 70%;
   padding: 0 10px;
-  line-height: 20px;
-  /* 1行の高さを40pxにする？ */
+  line-height: 40px;
 }
 
 .text-row{
@@ -98,17 +95,25 @@ footer{
   color: #fff;
   text-align: center;
   line-height: 100px;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width:768px) {
   .flex{
     display: block;
   }
-  
+
   .img{
     width: 100%;
   }
-  
+
   .text{
     width: 100%;
   }
+
+  footer{
+    position: relative;
+  }
+
+}
